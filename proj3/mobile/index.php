@@ -73,16 +73,16 @@
                 Source code:
             </li>
             <li>
-                <a href="http://validator.w3.org/check?uri=referer">xhtml</a>
+                <a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/mobile/index.php">xhtml</a>
             </li>
             <li>
-                <a href="http://jigsaw.w3.org/css-validator/check/referer">css</a>
+                <a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/mobile/css/stylesheet.css">css</a>
             </li>
             <li>
-                <a href="">php autoryzator</a>
+                <a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/lib/checkIfAuthorizated.php">php autoryzacji</a>
             </li>
             <li>
-                <a href="">php czy mobilne</a>
+                <a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/lib/checkIfMobile.php">php if mobile</a>
             </li>
         </ul>
     </div>

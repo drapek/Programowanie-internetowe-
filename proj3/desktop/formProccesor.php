@@ -167,11 +167,11 @@ require_once("saveDataIntoSession.php");
                 <h2>Pliki źródłowe</h2>
             </div>
             <ul class="style1">
-                <li><a href="view-source:index.html">HTML tej strony</a></li>
-                <li><a href="view-source:default.css">CSS tej strony</a></li>
-                <li><a href="view-source:tableGenerator.js">PHP autoryzacji</a></li>
-                <li><a href="view-source:tableGenerator.js">PHP mobile checkera</a></li>
-                <li><a href="view-source:tableGenerator.js">PHP zapisywacza sesji</a></li>
+                <li><a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/desktop/formProccesor.php">HTML tej strony</a></li>
+                <li><a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/desktop/formProccessorStyle.css">CSS tej strony</a></li>
+                <li><a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/lib/checkIfAuthorizated.php">PHP autoryzacji</a></li>
+                <li><a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/lib/checkIfMobile.php">PHP mobile checkera</a></li>
+                <li><a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/desktop/saveDataIntoSession.php">PHP zapisywacza sesji</a></li>
             </ul>
         </div>
         <div id="box3">

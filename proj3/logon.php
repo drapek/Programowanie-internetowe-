@@ -102,9 +102,9 @@
                 <h2>Pliki źródłowe</h2>
             </div>
             <ul class="style1">
-                <li><a href="view-source:index.html">HTML tej strony</a></li>
-                <li><a href="view-source:default.css">CSS tej strony</a></li>
-                <li><a href="view-source:default.css">PHP autoryzacji</a></li>
+                <li><a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/logon.php">HTML tej strony</a></li>
+                <li><a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/logon.css">CSS tej strony</a></li>
+                <li><a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/authorize.php"</a></li>
             </ul>
         </div>
         <div id="box3">

@@ -221,11 +221,11 @@
 				<h2>Pliki źródłowe</h2>
 			</div>
 			<ul class="style1">
-				<li><a href="view-source:index.html">HTML tej strony</a></li>
-				<li><a href="view-source:default.css">CSS tej strony</a></li>
-                <li><a href="view-source:tableGenerator.js">JS validatora</a></li>
-                <li><a href="view-source:tableGenerator.js">PHP autoryzacji</a></li>
-                <li><a href="view-source:tableGenerator.js">PHP mobile checkera</a></li>
+				<li><a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/desktop/index.php">HTML tej strony</a></li>
+				<li><a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/desktop/default.css">CSS tej strony</a></li>
+                <li><a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/desktop/validate.js">JS validatora</a></li>
+                <li><a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/lib/checkIfAuthorizated.php">PHP autoryzacji</a></li>
+                <li><a href="https://github.com/drapek/Programowanie-internetowe-/blob/master/proj3/lib/checkIfMobile.php">PHP mobile checkera</a></li>
 
 
 			</ul>
