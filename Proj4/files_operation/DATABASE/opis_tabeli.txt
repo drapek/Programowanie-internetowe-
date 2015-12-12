@@ -1,0 +1,10 @@
+Zaprezentowana baza danych to tabela w pliku CSV, gdzie kolejno kolumny oznaczają: 
+1. id_pliku - numer porzadkowy pliku
+2. id_pakietu  - numer określający które pliki zostały przesłane w jednym pakiecie danych
+3. nazwa_pliku - nazwa pliku
+4. typ - typ pliku
+5. rozmiar
+6. komentarz - tekst dodany przez użytkwnika w polu komentarz do pliku
+7. ścieżka - ścieżka do pliku na serwerze
+8. ip nadawcy pliku
+9. data z godziną przesłania danego pliku

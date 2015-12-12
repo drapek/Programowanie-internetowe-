@@ -1,0 +1,50 @@
+/****************************************************************/
+/* CSS DO WYŚWIETLANIA DANYCH KTÓRE ZOSTAŁY PRZESŁANE NA SERWER */
+/****************************************************************/
+
+.dataAsTable {
+    display: table;
+    width: auto;
+}
+
+.data_row {
+    display: table-row;
+    width: auto;
+}
+
+.data_odd {
+    background-color: #d2e3ff;
+}
+
+.data_title {
+    border-top: 1px solid #345080 ;
+}
+
+.data_cell {
+    display: table-cell;
+    width: auto;
+    padding: 0.2em 0.5em;
+    border-bottom: 1px solid #345080 ;
+}
+
+.data_cell_pure {
+    text-decoration: none;
+    display: table-cell;
+    width: auto;
+    padding: 0.2em 0.5em;
+}
+
+.sended_form_label {
+    color: #345080;
+    font-weight: bold;
+}
+
+#form_result {
+    font-size: 20px;
+
+}
+
+.go_back {
+    float: right;
+}
+

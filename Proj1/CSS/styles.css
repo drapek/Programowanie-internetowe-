@@ -1,0 +1,234 @@
+body {
+    font-family: Georgia, arial, sans-serif;
+    margin: auto;
+    padding: 0px;
+    background: darkgray;
+}
+
+.sourceCode {
+    text-decoration: none;
+    color: white;
+}
+
+#MainSiteHeader, #MainSiteFoot {
+    background-image: url("http://wallpaperswa.com/thumbnails/detail/20120806/patterns%20textures%20backgrounds%20gradient%201440x900%20wallpaper_wallpaperswa.com_32.jpg");
+}
+
+#MainSiteNav {width: 95%; margin: 0 auto; background-color: #242424; margin-top: 0.2em; margin-bottom: 0.2em; border-radius: 5px;}
+#menu {display: table; padding: 4px 0; margin: 0 auto; overflow: hidden; font-size: 14px; background: #242424;}
+#menu li {list-style-type: none; margin: 0 auto; float: left; }
+#menu li:hover {background: #404040;}
+#menu li a {display: block; color: white; text-decoration: none; padding: 7px 10px 7px;}
+#menu li a:hover {background: #404040; color: white;}
+/*#menu li li a {width: 160px;}*/
+#menu li ul {overflow: hidden; display: none; background: #242424;}
+#menu li:hover ul {position: absolute; padding: 0; display: block; width: 160px;}
+
+/*ANIMACJA - tylko CSS3*/
+#menu *:hover {transition: 0.3s ease-in;}
+
+/*ZAOKRĄGLONE ROGI - tylko CSS3*/
+#menu {border-radius: 3px;}
+#menu li ul {border-radius: 0 0 3px 3px;}
+
+.content {
+    float:left;
+    margin:  0 2em 0 2em;
+    padding: 2em;
+    background-color: white;
+    border-radius: 3px
+}
+
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+
+.ramkaWykop {
+    width: 100%;
+    height: 500px;
+
+}
+
+#header {
+    background-color:deepskyblue;
+    color:#555555;
+    text-align:center;
+    font-size: 30px;
+    padding:5px;
+}
+
+#nav .button a {
+    text-decoration: none;
+    color: #555555;
+    padding: 2px;
+    font-weight: bold;
+}
+
+#nav {
+    background-color:cornflowerblue;
+    padding:5px;
+    margin-left:auto;
+    text-align: center;
+
+}
+
+#nav .button {
+    display: inline-block;
+    padding: 2px;
+    margin: 2px;
+    background-color: #EEEEEE;
+    color: #333333;
+    border: 1px solid #333333;
+
+}
+
+
+#footer {
+    background-color:cornflowerblue;
+    color:#eeeeee;
+    clear:both;
+    text-align:center;
+    padding:5px;
+
+}
+
+/* zasady dotycz�ce CV w HTML5 w oparciu o div*/
+#coloredBackgorund {
+    background-color: #eeeeee;
+}
+
+#CV-content {
+    margin: auto;
+    width: 721px;
+    background-color: white;
+    padding: 15px;
+
+}
+#CV-PersonalInfo, #CV-Education, #CV-Lanugaes, #CV-Skills, #CV-Intrests {
+    padding: 20px 0px;
+}
+
+.AddresInfoLine .AddresLabel, .AddresInfoLine .AddressValue {
+    display: inline-block;
+}
+
+#AddressInfo {
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.AddresInfoLine .AddresLabel {
+    font-weight: bold;
+}
+
+#CV-content #CV-PersonName {
+    font-size: 40px;
+    color: dodgerblue;
+}
+
+#PersonPhotoMinature {
+    width: 120px;
+    height: 160px;
+    float: left;
+    margin-left: 100px;
+}
+
+#CV-PersonalInfo {
+    display: inline-block;
+}
+
+#CV-addrInfoWrapper {
+    float: left;
+}
+
+.SectionHeader {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-color: #aaaaaa;
+    color: #6495ED;
+    font-weight: bold;
+}
+
+.Education-date-range, .Education-School, .Col-Label, .Col-Value  {
+    display: inline-table;
+}
+
+.Col-Label, .Education-date-range{
+    width: 25%;
+
+}
+
+.Col-Value, .Education-School {
+    width: 74%;
+
+}
+
+.CV-Education-row, .Skill-row {
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.CV-Education-row, .Language-row, .Skill-row {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.blue-row {
+    background-color: #E3F0FB;
+
+}
+
+/* zasady dotycz�ce CV w HTML na tableach, (zasady powy�ej te� dotycz�) */
+#TBmain {
+    width: 100%;
+}
+
+#TBmenu {
+    background-color:cornflowerblue;
+    padding:5px;
+    margin-left:auto;
+    text-align: center;
+    border: 0px;
+    margin: 0px;
+}
+
+#TBmenu a{
+    text-decoration: none;
+    color: #555555;
+    padding: 2px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 2px;
+    margin: 2px;
+    background-color: #EEEEEE;
+    color: #333333;
+    border: 1px solid #333333;
+
+}
+
+
+.AllPageWidth {
+    width: 100%;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#Margins {
+    margin: auto;
+    width: 760px;
+    background-color: white;
+}
+

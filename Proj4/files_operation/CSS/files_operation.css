@@ -1,0 +1,43 @@
+/**************************************/
+/*    wygląd storny z formularzem     */
+/**************************************/
+
+#file_upload tr th {
+    font-weight: bold;
+    background-color: #37c0fb;
+}
+
+#file_upload {
+    margin: 0 0 0.5em;
+}
+
+
+button#new {
+    float: right;
+    background-color: #37c0fb;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 1em;
+    line-height: 2.75em;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+
+}
+
+.input_file {
+    float: right;
+}
+
+.input_comment {
+    display: inline;
+    width: 100%;
+}
+
+/**************************************/
+/*    wygląd storny z listą plików    */
+/**************************************/
