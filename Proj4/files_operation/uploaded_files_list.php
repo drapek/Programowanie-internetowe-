@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -72,12 +71,15 @@
 			<section class="wrapper style1">
 				<div class="container">
 					<h2>Pliki znajdujące się na serwerze:</h2>
+					<p>
+						Kliknij na nazwę pliku by go pobrać.
+					</p>
 
 				</div>
 			</section>
 
 			<!-- Posts -->
-				<section class="wrapper style1">
+				<section class="wrapper style1" style="padding: 0 0 2em">
 					<div class="container">
 						<table id="file_list" >
 							<tr>
@@ -85,11 +87,92 @@
 									lp.
 								</th>
 								<th>
-
+									nazwa
+								</th>
+								<th>
+									rozmiar
+								</th>
+								<th>
+									komentarz
 								</th>
 							</tr>
+<?php
+/*********************************************/
+/*generator tabeli z listą przesłanych plików*/
+/*********************************************/
+$path_to_db = realpath('./DATABASE') . "/DATABASE_UPLOADED_FILES.csv";
+
+$print_empty_table = false;
+
+$db_file = fopen($path_to_db, "r");
+
+//gdy plik nie istnieje lub jest pusty
+if($db_file == null || filesize($path_to_db) == 0) {
+	$print_empty_table = true;
+}
+
+if(!$print_empty_table) {
+	$licznik = 1;
+	//wyświetl normalną tablę
+	while (($data = fgetcsv($db_file, 2000, ";", '"' )) != FALSE) {
+		echo "
+		<tr "; echo $licznik % 2 == 0 ? "class=\"odd\"": ""; echo ">
+			<td class=\"table_file_lp\">
+				$licznik
+			</td>
+			<td class=\"table_file_name\">
+				<a href=\"./downloads.php?p=$data[2]\" > $data[2] </a>
+			</td>
+			<td class=\"table_file_size\">
+				" . formatBytes($data[4]) ."
+			</td>
+			<td class=\"table_file_comment\"> ";
+				echo $data[5] == "" ? "-" : $data[5];
+		echo "</td>
+		</tr>
+		";
+		$licznik++;
+	}
+} else {
+	//wyświetl pustą
+	echo "
+		<tr>
+			<td>
+				-
+			</td>
+			<td>
+				-
+			</td>
+			<td>
+				-
+			</td>
+			<td>
+				-
+			</td>
+		</tr>
+	";
+}
+
+//funkcja to ładnego zformatowania rozmiaru plików
+function formatBytes($bytes, $precision = 2) {
+	$units = array('B', 'KB', 'MB', 'GB', 'TB');
+
+	$bytes = max($bytes, 0);
+	$pow = floor(($bytes ? log($bytes) : 0) / log(1024));
+	$pow = min($pow, count($units) - 1);
+
+	// Uncomment one of the following alternatives
+	// $bytes /= pow(1024, $pow);
+	$bytes /= (1 << (10 * $pow));
+
+	return round($bytes, $precision) . ' ' . $units[$pow];
+}
+?>
 
 						</table>
+
+
+						<a href="./file_upload.html" ><button id="send_files">Prześlij pliki</button></a>
 
 					</div>
 				</section>

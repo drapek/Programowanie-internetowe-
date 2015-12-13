@@ -41,3 +41,38 @@ button#new {
 /**************************************/
 /*    wygląd storny z listą plików    */
 /**************************************/
+
+#file_list tr td {
+    text-align: center;
+}
+
+#file_list tr th {
+    font-weight: bold;
+    background-color: #37c0fb;
+    color: white;
+}
+
+#file_list tr.odd {
+    background-color: #def2fb;
+}
+
+#file_list a {
+    color: #008ccc;
+}
+
+
+button#send_files {
+    background-color: #37c0fb;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 1em;
+    line-height: 2.75em;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+
+}

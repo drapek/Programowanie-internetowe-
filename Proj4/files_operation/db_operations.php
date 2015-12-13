@@ -27,7 +27,7 @@ class db_operations
         if(($tmpFileHndl = fopen($path_to_db, "r")) == FALSE) {
             //gdy nie istnieje to go tworzy i wychodzi
             $tmpFileHndl = fopen($path_to_db, "w")
-            or die();
+            or die("Nie mogę utworzyć nowego pliku bazy danych! Sprawdź uprawnenia!");
             return;
         }
 
@@ -48,6 +48,5 @@ class db_operations
         fputcsv($this->fileHandler, $joinedArrays, ";", '"');
     }
 
-    //TODO function to read data from CSV for website to list uploaded files
 
 }
