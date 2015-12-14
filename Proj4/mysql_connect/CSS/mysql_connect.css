@@ -1,0 +1,17 @@
+#login_list_tab tr td {
+    text-align: center;
+}
+
+#login_list_tab tr th {
+    font-weight: bold;
+    background-color: #37c0fb;
+    color: white;
+}
+
+#login_list_tab tr.odd {
+    background-color: #def2fb;
+}
+
+#login_list_tab a {
+    color: #008ccc;
+}
