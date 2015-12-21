@@ -30,9 +30,6 @@ function findPersonByLoginPattern($loginPattern) {
         $row_increment++;
     }
 
-    //TODO delete this line at the end of project!
-    var_dump($result_array);
-
     $db->close();
     return $result_array;
 

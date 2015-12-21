@@ -87,11 +87,11 @@
 				<div class="container">
 					<h1>Wyszukiwarka loginów:</h1>
 					<form action="mysql_connect.php#tab_loginow" method="post">
-						<input name="login_pattern" type="text" placeholder="wzór loginu"/>
+						<input name="login_pattern" id="login_pattern" type="text" placeholder="wzór loginu"/>
 						<input id="butt_wyszukaj" type="submit" value="wyszukaj">
 						<!-- ukryte inputy -->
-						<input name="Imie" type="hidden">
-						<input name="Nazwisko" type="hidden">
+						<input name="Imie" id="Imie" type="hidden">
+						<input name="Nazwisko" id="Nazwisko" type="hidden">
 					</form>
 
 				</div>
@@ -132,7 +132,7 @@
 									 $i
 									</td>
 								    <td>
-									 " .$oneRow['login'] . "
+									 <a onclick=\"fillUserPatternInput( '" . $oneRow['login'] . "', '" . $oneRow['name'] . "', '" . $oneRow['surname'] . "') \" >" .$oneRow['login'] . " </a>
 									</td>
 									<td>
 									 " .$oneRow['name'] . "
@@ -190,6 +190,7 @@
 			<!--[if lte IE 8]>
 			<script src="../assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
+			<script src="JS/fillUserPatternInput.js"></script>
 
 	</body>
 </html>

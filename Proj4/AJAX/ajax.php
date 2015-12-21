@@ -74,17 +74,95 @@
 			<!-- Highlights -->
 			<section class="wrapper style1">
 				<div class="container">
-						<!--TODO zrób projekt ajax -->
-
-					<h2>Strona w budowie</h2>
-					<p>
-						Przewidywany termin zakończenia to 21.12.15.
-					</p>
+					<h2>Ramka pływająca JS</h2>
+					<p>Poniższa ramka ma jedynie pokazać w jaki sposób wpływają zapytania AJAX na działanie pozostałego kodu Java Script.</p>
+					<div id="floatBounds">
+						<div id="floatingRectangle">
+						</div>
+					</div>
 
 
 				</div>
 			</section>
+			<!-- Highlights -->
+			<section class="wrapper style1">
+				<div class="container">
+					<div class="ajaxDefinitionBlock">
+						<h2>Zapytania AJAX</h2>
 
+							Wybierz zakres losowanej liczby przez skrypt php, a następnie metodę którą zostanie ona wywołana.
+
+
+						<form action="" type="GET">
+							<label for="minVal">Minimum</label>
+							<input type="number" placeholder="min" name="minVal" value="10" id="minVal"/>
+
+							<label for="maxVal">Maximum</label>
+							<input type="number" placeholder="max" name="maxVal" value="500" id="maxVal" />
+
+							<label for="maxVal">Sztuczne opóźnienie serwera w ms</label>
+							<input type="number" placeholder="max" name="maxVal" value="500" id="sleep_time" />
+						</form>
+					</div>
+
+					<div class="ajaxButtonsBlock">
+						<button type="button" onclick="ajaxGet(0)">Get Synchroniczne</button>
+						<button type="button" onclick="ajaxGet()">Get Asynchroniczne</button>
+						<button type="button" onclick="ajaxPost(0)">Post Synchroniczne</button>
+						<button type="button" onclick="ajaxPost()">Post Asynchroniczne</button>
+					</div>
+
+					<h3>Tabela wynikowa dla zapytań Get Synchronicznych</h3>
+					<table class="ajaxTable" id="tableGetSynch">
+						<tr class="header">
+							<th>
+								Lp.
+							</th>
+							<th>
+								Wylosowana liczba
+							</th>
+						</tr>
+					</table>
+
+					<h3>Tabela wynikowa dla zapytań Get Asynchronicznych</h3>
+					<table class="ajaxTable" id="tableGetAsynch">
+						<tr class="header">
+							<th>
+								Lp.
+							</th>
+							<th>
+								Wylosowana liczba
+							</th>
+						</tr>
+					</table>
+
+					<h3>Tabela wynikowa dla zapytań Post Synchronicznych</h3>
+					<table class="ajaxTable" id="tablePostSynch">
+						<tr class="header">
+							<th>
+								Lp.
+							</th>
+							<th>
+								Wylosowana liczba
+							</th>
+						</tr>
+					</table>
+
+					<h3>Tabela wynikowa dla zapytań Post Asynchronicznych</h3>
+					<table class="ajaxTable" id="tablePostAsynch">
+						<tr class="header">
+							<th>
+								Lp.
+							</th>
+							<th>
+								Wylosowana liczba
+							</th>
+						</tr>
+					</table>
+
+
+				</div>
+			</section>
 
 
 			<!-- Footer -->
@@ -124,6 +202,8 @@
 			<!--[if lte IE 8]>
 			<script src="../assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="../assets/js/main.js"></script>
+			<script src="JS/moveRectangle.js"></script>
+			<script src="JS/ajaxRequests.js"></script>
 
 	</body>
 </html>

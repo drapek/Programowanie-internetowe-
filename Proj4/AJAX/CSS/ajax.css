@@ -1,0 +1,53 @@
+#floatBounds {
+    border: solid;
+    height: 400px;
+    position: relative;
+}
+
+#floatingRectangle {
+    background-color: #2DAAE4;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 30px;
+    top: 40px;
+}
+
+.ajaxDefinitionBlock {
+    padding-bottom: 1em;
+}
+
+.ajaxButtonsBlock {
+    padding-bottom: 1em;
+}
+
+/*****************/
+/* wygląd tabeli */
+/*****************/
+
+tr td {
+    text-align: center;
+}
+
+tr th {
+    font-weight: bold;
+    background-color: #37c0fb;
+    color: white;
+}
+
+
+button {
+    background-color: #37c0fb;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 1em;
+    line-height: 2.75em;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+
+}
